@@ -1,4 +1,38 @@
-h1 {
-    font-size: 60px;
-    text-align: center;
-  }
+body {
+margin: 0;
+padding: 0;
+}
+
+/* Style for the banner */
+.banner {
+background-color: #4CAF50;
+color: white;
+padding: 10px;
+text-align: center;
+position: fixed;
+width: 100%;
+z-index: 2;
+}
+
+/* Add the container */
+.container {
+display: flex;
+}
+
+/* Add the sidebar */
+.sidebar {
+width: 200px;
+background-color: #111;
+padding-top: 100px; 
+z-index: 1;
+position: fixed;
+height: 100vh;
+
+}
+
+/* Add styles for the map */
+gmp-map {
+flex: 1;
+height: 100vh; /* Subtract the height of the banner */
+margin-left: 200px; /* Width of the sidebar */
+}
