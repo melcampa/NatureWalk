@@ -14,12 +14,12 @@ width: 100%;
 z-index: 2;
 }
 
-/* Add the container */
+/* Style for container */
 .container {
 display: flex;
 }
 
-/* Add the sidebar */
+/* Style for sidebar */
 .sidebar {
 width: 200px;
 background-color: #111;
@@ -33,6 +33,6 @@ height: 100vh;
 /* Add styles for the map */
 gmp-map {
 flex: 1;
-height: 100vh; /* Subtract the height of the banner */
+height: 100vh; 
 margin-left: 200px; /* Width of the sidebar */
 }
