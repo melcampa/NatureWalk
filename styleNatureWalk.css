@@ -27,12 +27,31 @@ padding-top: 100px;
 z-index: 1;
 position: fixed;
 height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+
+.sidebar button {
+    flex: 1; /* Each button takes up equal space */
+    background-color: #00000000;
+    color: rgb(255, 255, 255); 
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    transition: color 0.5s ease, background-color 0.3s ease; /* Smooth transition on hover */
 
 }
 
+.sidebar button:hover {
+    background-color: #7b94797b; /* Slightly grey out on hover */
+    color: #a8bead; /* Change text color on hover */
+}
+
 /* Add styles for the map */
-gmp-map {
+.resized-image {
 flex: 1;
-height: 100vh; 
+width: 100vh; 
 margin-left: 200px; /* Width of the sidebar */
 }

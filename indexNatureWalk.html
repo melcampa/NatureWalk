@@ -9,9 +9,6 @@
     
     <link rel="stylesheet" href="./styleNatureWalk.css">
     <title>Nature Walk</title>
-    <!-- The callback parameter is required, so we use console.debug as a noop -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqEItQkvbB16iWmbcJBtLplBUZpaS-EuA&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
   </head>
   <body>
     <!-- Top banner -->
@@ -23,15 +20,13 @@
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
-            <a href="#">Home</a>
-            <a href="attractions.html">Attractions</a>
-            <a href="foliage.html">Foliage</a>
+          <button onclick="location.href='#'">Home</button>
+          <button onclick="location.href='attractions.html'">Attractions</button>
+          <button onclick="location.href='foliage.html'">Foliage</button>
         </div>
     </div>
 
-    <gmp-map center="42.25541687011719,-72.57288360595703" zoom="14" map-id="DEMO_MAP_ID">
-        <gmp-advanced-marker position="42.25541687011719,-72.57288360595703" title="My location"></gmp-advanced-marker>
-    </gmp-map>
+    <img src="map.jfif" alt="Map" class="resized-image">
 
     <script src="javaNatureWalk.js"></script>
   </body>
