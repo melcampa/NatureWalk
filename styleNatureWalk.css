@@ -1,57 +1,69 @@
 body {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Style for the banner */
 .banner {
-background-color: #4CAF50;
-color: white;
-padding: 10px;
-text-align: center;
-position: fixed;
-width: 100%;
-z-index: 2;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 /* Style for container */
 .container {
-display: flex;
+    display: flex;
 }
 
 /* Style for sidebar */
 .sidebar {
-width: 200px;
-background-color: #111;
-padding-top: 100px; 
-z-index: 1;
-position: fixed;
-height: 100vh;
-display: flex;
-flex-direction: column;
+    width: 200px;
+    background-color: #111;
+    padding-top: 100px;
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-
 .sidebar button {
-    flex: 1; /* Each button takes up equal space */
+    flex: 1;
     background-color: #00000000;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     border: none;
     text-align: center;
     cursor: pointer;
     font-size: 25px;
-    transition: color 0.5s ease, background-color 0.3s ease; /* Smooth transition on hover */
-
+    transition: color 0.5s ease, background-color 0.3s ease;
 }
 
 .sidebar button:hover {
-    background-color: #7b94797b; /* Slightly grey out on hover */
-    color: #a8bead; /* Change text color on hover */
+    background-color: #7b94797b;
+    color: #a8bead;
 }
 
 /* Add styles for the map */
 .resized-image {
-flex: 1;
-width: 100vh; 
-margin-left: 200px; /* Width of the sidebar */
+    width: 100%; /* Set width to 100% of the viewport */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    margin-left: 200px; /* Width of the sidebar */
+}
+
+/* Add styles for the foliage content */
+.foliage-content {
+    width: 100%; /* Set width to 100% of the viewport */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    margin-left: 200px; /* Width of the sidebar */
+}
+
+/* Add styles for the foliage content */
+.attractions-content {
+    width: 100%; /* Set width to 100% of the viewport */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    margin-left: 200px; /* Width of the sidebar */
 }
